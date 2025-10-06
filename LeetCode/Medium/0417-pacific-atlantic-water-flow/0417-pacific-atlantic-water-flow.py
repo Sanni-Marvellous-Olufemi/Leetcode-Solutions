@@ -9,7 +9,7 @@ class Solution:
 
             if (r >= row) or (c >= col) or (r < 0) or (c < 0) or (prev > heights[r][c]) or k in ocean:
                 return 
-     
+
             ocean.add(k)
             opt1 = walk(r, c+1, heights[r][c], ocean)
             opt2 = walk(r, c-1, heights[r][c], ocean)
@@ -19,16 +19,12 @@ class Solution:
             return 
 
         for r in range(row):
-            pac.add((r,0))
-            atl.add((r, col-1))
-            walk(r, 1, heights[r][0], pac)
-            walk(r, col-2, heights[r][col-1], atl)
+            walk(r, 0, 0, pac)
+            walk(r, col-1, 0, atl)
 
         for c in range(col):
-            pac.add((0, c))
-            atl.add((row-1, c))
-            walk(1, c, heights[0][c], pac)
-            walk(row-2, c, heights[row-1][c], atl)
+            walk(0, c, 0, pac)
+            walk(row-1, c, 0, atl)
                     
         for i in pac:
             if i in atl:
