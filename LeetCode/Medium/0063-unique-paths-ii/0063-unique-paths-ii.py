@@ -13,7 +13,7 @@ class Solution:
                 return 1
 
             if (r,c) in memo:
-                return memo(r,c)
+                return memo[(r,c)]
 
             opt1 = walk(r+1, c)
             opt2 = walk(r, c+1)
