@@ -48,7 +48,7 @@ class Solution:
             return memo[i]
 
         for i in range(len(power)):
-            if power[i] not in memo:
+            if i not in memo:
                 walk(i)
 
         return ans
