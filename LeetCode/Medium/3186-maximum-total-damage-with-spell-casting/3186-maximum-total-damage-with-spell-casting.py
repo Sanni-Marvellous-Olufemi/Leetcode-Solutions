@@ -23,11 +23,20 @@ class Solution:
             if i in memo:
                 return memo[i]
 
-            j = i + 1
-            while j < len(power):
-                if power[i] - 2 > power[j]:
+            start, end, y = i+1, len(power)-1, False
+            while start <= end:
+                mid = (start + end) // 2
+
+                if power[mid] < power[i] - 2 and (power[mid-1] >= power[i]-2):
+                    j, y = mid, True
                     break
-                j += 1
+                
+                if power[mid] >= power[i]-2:
+                    start = mid +1
+                else:
+                    end = mid - 1
+
+            j = j if y else len(power)
             
             if (j < len(power)-2) and (power[j+1] >= power[j] - 2) and (power[j+2] >= power[j] - 2):
                 opt1 = walk(j)
