@@ -57,6 +57,16 @@ class Solution:
         
 
 """
--Recursively go down, use a while loop. While power i+1 == curr +2 or +1, skip. when you finally get to something less than curr - 2, if the next of that is in the range (+1, +2) use 0-1 knapsack to get the maximum
--Store max of each in a memo and return it
+-Use a hashmap to store the frequency of each damage
+-Remove all duplicates in power (Create a new power without duplicates)
+-Sort the new power in decreasing order
+-Recursively go down starting from index 0 (highest damage in power) to valid damages that can be added (all damages less than power[j] - 2)
+-In the recursive function, the base case is if index is invalid (return 0) or index is the last thing in the list (return power[i] * freq in hashmap) or index is in memo (already been traversed, return memo[i]).
+-For the recusuve case, 
+-Find the next valid danger (While power[i+1] == power[i] -2 or -1, skip. runs in O(1) due to no duplicate). 
+-When you finally get to a valid danger, if the next 2 elements after that danger are in the range (danger -1, -2) recursively call walk on each of the indices(use 0-1 knapsack to get the maximum).
+-We check the next 2 elements because picking the first valid danger automatically skips the next 2 if they are in the range (danger -1, -2), so you want to check each of the outcomes to see the best, not just greedily picking the highest and skipping the rest
+-After recursively calling walk on the 3 indices (if they're valid else assign them to 0) pick the one with the max total damage and add the value + the current i * freq to memo (memo[i] = max(opt1, opt2, opt3) + (power[i] * hashmap[power[i]])) and return it
+-Now in the main function, call walk on all indices that have not been walked on
+-Return the max total damage in memo after all operations
 """
