@@ -1,6 +1,7 @@
 class Solution:
     def removeAnagrams(self, words: List[str]) -> List[str]:
-        ans, sets = [], set()
+        ans = [words[0]]
+        
         def ord_set(word):
             arr = [0] * 26
             
@@ -9,12 +10,10 @@ class Solution:
 
             return arr
 
-        for word in words:
-            chars = ord_set(word)
-            if tuple(chars) in sets:
+        for i in range(1, len(words)):
+            if ord_set(words[i]) == ord_set(words[i-1]):
                 continue
-            sets.add(tuple(chars))
-            ans.append(word)
+            ans.append(words[i])
 
         return ans
         
