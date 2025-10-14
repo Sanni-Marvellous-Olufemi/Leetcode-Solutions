@@ -33,15 +33,17 @@ class Solution:
     
             
             if num in hashmap:
-                part1 = hashmap[num] if num != 10 ** int(math.log10(num)) else "One" + " " + hashmap[num]
+                part1 = hashmap[num] if num != 10 ** int(math.log10(num)) else "One" + " " + hashmap[num]   
                 
             else:
                 if num//arr[i] in hashmap:
-                    part1 = hashmap[num//arr[i]] + " " + hashmap[arr[i]]   
+                    part1 = hashmap[num//arr[i]] + " " + hashmap[arr[i]] 
+                    if hashmap[num//arr[i]] in {"Hundred","Thousand","Million","Billion"}:
+                        part1 = "One" + " " + part1
                 else:
                     part1 = walk(num//arr[i], i) + " " + hashmap[arr[i]] 
                     
-
+            
             return part1 + " " + part2 if part2 else part1 + part2
 
         return walk(num, 0)
