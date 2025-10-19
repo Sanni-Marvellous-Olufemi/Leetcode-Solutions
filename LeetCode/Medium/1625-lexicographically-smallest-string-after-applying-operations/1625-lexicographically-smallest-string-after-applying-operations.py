@@ -1,28 +1,35 @@
-from heapq import heappop, heappush
-
 class Solution:
     def findLexSmallestString(self, s: str, a: int, b: int) -> str:
-        arr1, arr2, ans = [], [], ""
-        y = True if b % 2 else False
+        sets, queue, ans = set(), deque(), s
+        queue.append(s)
 
-        for i in range(len(s)):
-            if not y and i % 2 == 0:
-                heappush(arr2, s[i])
-                continue
+        while queue:
+            s = queue.popleft()
 
-            if a == 5:
-                heappush(arr1, str(int(s[i]) % 5))
-                continue
+            if s not in sets:
+                rot = s[len(s)-b:] + s[:len(s)-b]
+                add = ""
 
-            heappush(arr1, str(int(s[i]) % 2)) if a % 2 == 0 else heappush(arr1, "0")
-            
-
-        while arr1:
-            if arr2:
-                ans += heappop(arr2)
-            ans += heappop(arr1)
+                for i in range(len(s)):
+                    if i % 2 == 1:
+                        add += str((int(s[i]) + a) % 10)
+                    else:
+                        add += s[i]
+                
+                ans = min(ans, add, rot)
+                queue.append(rot)
+                queue.append(add)
+                sets.add(s)
 
         return ans
+
+            
+
+
+        
+
+
+
 
 
 """
