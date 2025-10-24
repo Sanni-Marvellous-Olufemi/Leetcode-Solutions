@@ -2,6 +2,7 @@ class Solution:
     def letterCasePermutation(self, s: str) -> List[str]:
         
         res = set()
+        @cache
         def recurse(i, path):
             if i == len(s):
                 res.add(path)
