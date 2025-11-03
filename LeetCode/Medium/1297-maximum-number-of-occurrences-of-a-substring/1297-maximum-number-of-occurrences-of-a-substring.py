@@ -10,3 +10,10 @@ class Solution:
                 left += 1
 
         return max(hashmap.values()) if hashmap else 0
+
+"""
+-If a subarray of len maxSize is repeated, then all subarrays of that subarray were also repeated, so you only need to take note of minSize
+-Use a sliding window of len minSize to track subarrays
+-For each subarray, convert it to a set. If the length of the set is less than or equal to maxLetters, increase the value of the subarray in the hashmap by 1
+-Return Max Hahsmap
+"""
