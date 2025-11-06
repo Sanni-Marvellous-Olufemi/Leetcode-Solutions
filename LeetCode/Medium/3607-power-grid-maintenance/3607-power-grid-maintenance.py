@@ -1,39 +1,53 @@
 class Solution:
     def processQueries(self, c: int, connections: List[List[int]], queries: List[List[int]]) -> List[int]:
         graph = defaultdict(list)
-        offline, ans = set(), []
+        offline, ans, sets = set(), [], set()
+        count, hashmap = 0, defaultdict(list)
 
         for u,v in connections:
-            graph[u].append(v)
-            graph[v].append(u)
+            if not graph[u]:
+                graph[u].append([])
+            if not graph[v]:
+                graph[v].append([])
+            graph[u][0].append(v)
+            graph[v][0].append(u)
 
-        for check, node in queries:
-            if check == 2:
-                offline.add(node)
+        for node in graph:
+            if node in sets:
+                continue
+
+            count += 1
+            queue = deque()
+            queue.append(node)
+
+            while queue:
+                curr = queue.popleft()
+                graph[curr].append(count)
+                heappush(hashmap[count], curr)
+                sets.add(curr)
+
+                for child in graph[curr][0]:
+                    if child in sets:
+                        continue
+                
+                    queue.append(child)
+
+        for i,j in queries:
+            if i == 2:
+                offline.add(j)
             else:
-                if node not in offline:
-                    ans.append(node)
+                if j not in offline:
+                    ans.append(j)
                 else:
-                    sub = -1
-                    queue, sets, heap = deque(), set(), []
-                    queue.append(node)
+                    station = graph[j][1] if graph[j] else 0
+                    add = -1
+                    while hashmap[station]:
+                        if hashmap[station][0] in offline:
+                            heappop(hashmap[station])
+                        else:
+                            add = hashmap[station][0]
+                            break
 
-                    while queue:
-                        curr = queue.popleft()
-                        sets.add(curr)
-                        for child in graph[curr]:
-                            if child in sets:
-                                continue
-                            
-                            if child not in offline:
-                                heappush(heap, child)
-                            queue.append(child)
-
-                    ans.append(heap[0]) if heap else ans.append(-1)
-
-        return ans             
-                    
-                    
+                    ans.append(add)
 
         return ans
-
