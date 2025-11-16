@@ -9,7 +9,7 @@ class Solution:
             else:
                 count = 0
 
-        return ans
+        return ans % ((10 ** 9) + 7)
 
 """
 Use the pattern
