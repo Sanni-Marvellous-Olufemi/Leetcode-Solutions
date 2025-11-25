@@ -1,20 +1,13 @@
 class Solution:
     def smallestRepunitDivByK(self, k: int) -> int:
-        if k % 2 == 0:
+        if k % 2 == 0 or k % 5 == 0:
             return -1
+        rem = 0
 
-        if k == 1:
-            return k
+        for i in range(1, k+1):
+            rem = ((rem * 10) + 1) % k
 
-        sets = set()
-        rem, curr = 1 % k, 1
-
-        while rem not in sets:
-            sets.add(rem)
-            curr = (curr * 10) + 1
-            rem = curr % k
-    
             if rem == 0:
-                return int(math.log10(curr)) + 1
+                return i
 
         return -1
