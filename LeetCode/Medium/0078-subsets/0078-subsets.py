@@ -1,24 +1,15 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
-        ans = [[]]
+        ans = []
         dummy = []
 
         def walk(i):
-            if i >= len(nums):
-                return
+            ans.append(dummy[:])
 
-            for j in range(i+1, len(nums)):
+            for j in range(i, len(nums)):
                 dummy.append(nums[j])
-                ans.append(dummy[:])
-                walk(j)
+                walk(j+1)
                 dummy.pop()
 
-        for i in range(len(nums)):
-            dummy.append(nums[i])
-            ans.append(dummy[:])
-            walk(i)
-            dummy.pop()
-
-        return ans
-
-            
+        walk(0)
+        return ans   
