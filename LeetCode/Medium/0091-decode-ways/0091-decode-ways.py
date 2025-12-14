@@ -16,7 +16,7 @@ class Solution:
                 return memo[i]
 
             opt1 = 0
-            if (s[i] == "2") and (i < len(s)-1) and ("1" <= s[i+1] <= "6"):
+            if (s[i] == "2") and (i < len(s)-1) and (s[i+1] <= "6"):
                 opt1 = walk(i+2)
 
             if (s[i] == "1"):
