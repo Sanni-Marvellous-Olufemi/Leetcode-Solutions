@@ -1,40 +1,24 @@
 class Solution:
     def totalNQueens(self, n: int) -> List[List[str]]:
-        hashmap = {}
-        ans = 0
-        hashmap["row"] = set()
-        hashmap["col"] = set()
-        hashmap["dia"] = set()
-        hashmap["anti"] = set()
 
-        def walk(r, c, queens):
-            nonlocal n, ans
-
-            if c == n:
-                r += 1
-                c = 0
+        def walk(r, col, dia, anti):
 
             if r >= n:
-                if queens == n:
-                    ans += 1
-                return
+                return 1
 
-            if (c not in hashmap["col"]) and (r not in hashmap["row"]) and (r-c not in hashmap["dia"]) and (r+c not in hashmap["anti"]):
+            count = 0
+            for c in range(n):
+                if (c not in col) and (r-c not in dia) and (r+c not in anti):
+                    col.add(c)
+                    dia.add(r-c)
+                    anti.add(r+c)
 
-                hashmap["col"].add(c)
-                hashmap["row"].add(r)
-                hashmap["dia"].add(r-c)
-                hashmap["anti"].add(r+c)
+                    count += walk(r+1, col, dia, anti)
+                    
+                    col.remove(c)
+                    dia.remove(r-c)
+                    anti.remove(r+c)
 
-                walk(r, c+1, queens+1)
-                
-                hashmap["col"].remove(c)
-                hashmap["row"].remove(r)
-                hashmap["dia"].remove(r-c)
-                hashmap["anti"].remove(r+c)
+            return count
 
-            walk(r, c+1, queens)
-
-
-        walk(0, 0, 0)
-        return ans
+        return walk(0, set(), set(), set())
