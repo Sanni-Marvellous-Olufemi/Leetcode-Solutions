@@ -5,7 +5,7 @@ class Solution:
         for num in nums:
             count, curr, sqrt = 0, 0, int(num ** (1/2))
 
-            for i in range(1, sqrt):
+            for i in range(1, sqrt+1):
                 if num % i == 0:
                     count += 2 if (num/i) > sqrt else 1
                     curr += i
