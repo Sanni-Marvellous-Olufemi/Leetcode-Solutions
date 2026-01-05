@@ -14,7 +14,8 @@ class Solution:
                     pos = min(pos, matrix[r][c])
                     sums += matrix[r][c]
 
-        if count > 0 and count % 2 == 0:
+        print(sums, count)
+        if count == 0 or count % 2 == 0:
             return sums
         
         return sums - (min(abs(pos), abs(neg)) * 2)
