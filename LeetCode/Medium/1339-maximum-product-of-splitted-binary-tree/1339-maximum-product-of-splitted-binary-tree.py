@@ -27,4 +27,4 @@ class Solution:
 
         sum(root)
         walk(root)
-        return self.ans
+        return self.ans % (10 ** 9 + 7)
