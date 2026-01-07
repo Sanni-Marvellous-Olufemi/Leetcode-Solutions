@@ -1,23 +1,24 @@
-class Solution:
-    def convert(self, s: str, numRows: int) -> str:
+class Solution(object):
+    def convert(self, s, numRows):
+        ans = ""
 
         if numRows == 1:
             return s
-
-        ans = ""
+        
         for i in range(numRows):
-            down = True
-            curr = i
+            j = i
+            mid =(numRows - 1 - i) * 2
+            start = numRows * 2 - 2
+            y = False if i in {0, numRows-1} else True
 
-            while curr < len(s):
-                if down:
-                    formula = 2 * (numRows - 1 - i)
-                    down = False
-                else:
-                    formula = 2 * i
-                    down = True
-                if formula > 0:
-                    ans += s[curr]
-                    curr += formula
+            while j < len(s):
+                ans += s[j]
+
+                if y and (j + mid) < len(s):
+                    ans += s[j + mid]
+
+                j += start
 
         return ans
+
+        
