@@ -10,7 +10,8 @@ class Solution:
                 return memo[(i, j)]
 
             if text1[i] == text2[j]:
-                return walk(i+1, j+1) + 1
+                memo[(i, j)] =  walk(i+1, j+1) + 1
+                return memo[(i, j)]
 
             memo[(i, j)] = max(walk(i+1, j), walk(i, j+1))
             return memo[(i, j)]
