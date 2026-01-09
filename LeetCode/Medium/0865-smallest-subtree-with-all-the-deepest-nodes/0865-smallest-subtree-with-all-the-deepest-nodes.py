@@ -6,24 +6,49 @@
 #         self.right = right
 class Solution:
     def subtreeWithAllDeepest(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        levels, ans = 0, None
+        levels, ans, count, y = 0, None, 0, False
 
-        def walk(node, level, parent):
-            nonlocal levels, ans
+        def check(node, level):
+            nonlocal levels, count, ans
 
             if not node:
                 return
-
-            if not node.right and not node.left:
-                if level >= levels:
-                    ans = parent if parent.right and parent.left else node
+            
+            if not node.left and not node.right:
+                if level == levels:
+                    count += 1
+                    ans = node
+                elif level > levels:
+                    count = 1
                     levels = level
-                return
+                    ans = node
 
-            walk(node.left, level+1, node)
-            walk(node.right, level+1, node)
+            check(node.left, level+1)
+            check(node.right, level+1)
+        
+        check(root, 0)
+        if count == 1:
+            return ans
 
-        walk(root, 0, root)
+
+        def walk(node, level):
+            nonlocal levels, ans, count, y
+
+            if not node:
+                return 0
+
+            if level == levels:
+                return 1
+
+            curr = walk(node.left, level+1) + walk(node.right, level+1)
+
+            if curr == count and not y:
+                ans = node
+                y = True
+            
+            return curr
+
+        walk(root, 0)
         return ans
 
                 
