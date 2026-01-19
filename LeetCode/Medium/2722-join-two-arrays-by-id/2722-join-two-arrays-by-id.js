@@ -6,28 +6,36 @@
 var join = function(arr1, arr2) {
     arr1.sort((a,b) => a.id - b.id);
     arr2.sort((a,b) => a.id - b.id);
-    let ans = [];
+    let ans = [], i = 0, j = 0;
 
-    while ((arr1.length > 0) || (arr2.length > 0)) {
+    while ((i < arr1.length) || (j < arr2.length)) {
 
-        if ((arr1.length > 0) && (arr2.length > 0)) {
-            if (arr1[0].id < arr2[0].id) {
-                ans.push(arr1.shift());
+        if ((i < arr1.length) && (j < arr2.length)) {
+            if (arr1[i].id < arr2[j].id) {
+                ans.push(arr1[i]);
+                i++;
             }
-            else if (arr1[0].id == arr2[0].id) {
-                ans.push({...arr1.shift(), ...arr2.shift()});
+            else if (arr1[i].id == arr2[j].id) {
+                ans.push({...arr1[i], ...arr2[j]});
+                i++;
+                j++;
             }
             else {
-                ans.push(arr2.shift());
+                ans.push(arr2[j]);
+                j++;
             }
         }
-        else if (arr1.length > 0){
-            ans.push(arr1.shift());
+        else if (i < arr1.length){
+            ans.push(arr1[i]);
+            i++;
         }
         else {
-            ans.push(arr2.shift());
+            ans.push(arr2[j]);
+            j++;
         }
     }
 
     return ans;
 };
+
+    
