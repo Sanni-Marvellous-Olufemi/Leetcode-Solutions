@@ -6,7 +6,7 @@ class Solution:
             minPair = (-1, -1, float("inf"))
             y = True
             for i in range(1, len(nums)):
-                if nums[i]+nums[i-1] <= minPair[2]:
+                if nums[i]+nums[i-1] < minPair[2]:
                     minPair = (i-1, i, nums[i]+nums[i-1])
 
                 if nums[i] < nums[i-1]:
