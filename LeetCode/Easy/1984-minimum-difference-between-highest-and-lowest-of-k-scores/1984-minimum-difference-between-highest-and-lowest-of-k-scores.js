@@ -4,7 +4,7 @@
  * @return {number}
  */
 var minimumDifference = function(nums, k) {
-    nums.sort();
+    nums.sort((a,b) => a-b);
     let ans = Infinity;
 
     for (let i = 0, j = k-1; j < nums.length; i++, j++){
