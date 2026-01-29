@@ -4,6 +4,7 @@ class Solution:
     def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
         graph = defaultdict(list)
         ans = 0
+        memo = {}
 
         for i in range(len(original)):
             graph[original[i]].append((changed[i], cost[i]))
@@ -14,6 +15,10 @@ class Solution:
 
             start, end = source[i], target[i]
             heap, sets, hashmap = [], set(), defaultdict(lambda: float("inf"))
+
+            if (start, end) in memo:
+                ans += memo[(start, end)]
+                continue
 
             hashmap[start] = 0
             heappush(heap, (0, start))
@@ -35,6 +40,7 @@ class Solution:
             if end not in hashmap:
                 return -1
             ans += hashmap[end]
+            memo[(start, end)] = hashmap[end]
 
         return ans
 
