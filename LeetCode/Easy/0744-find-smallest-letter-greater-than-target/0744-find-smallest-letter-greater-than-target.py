@@ -1,9 +1,10 @@
 class Solution:
     def nextGreatestLetter(self, letters: List[str], target: str) -> str:
-        ans = "z"
+        ans, y = "z", False
 
         for i in letters:
             if i > target:
+                y = True
                 ans = min(ans, i)
 
-        return ans if target != "z" else letters[0]
+        return ans if y else letters[0]
