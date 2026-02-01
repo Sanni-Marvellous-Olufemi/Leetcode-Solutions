@@ -4,7 +4,9 @@ class Solution:
         curr1, curr2 = 1, 2
 
         for i in range(3, len(nums)):
-            if nums[i] <= nums[curr2]:
+            
+            if nums[i] <= nums[curr2] or nums[i] <= nums[curr1]:
+                # print(nums[i], nums[curr2], nums[curr1])
                 if nums[curr2] <= nums[curr1]:
                     curr1 = curr2
                 curr2 = i
