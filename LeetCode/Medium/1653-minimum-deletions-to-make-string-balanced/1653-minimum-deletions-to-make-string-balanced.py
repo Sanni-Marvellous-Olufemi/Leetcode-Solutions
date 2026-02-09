@@ -1,11 +1,6 @@
 class Solution:
     def minimumDeletions(self, s: str) -> int:
-        curr, ans = [], float("inf")
-
-        a, b = 0, 0
-        for i in s:
-            if i == "a":
-                a += 1
+        a, b, ans = s.count("a"), 0, float("inf")
 
         for i in range(len(s)):
             if s[i] == "a":
