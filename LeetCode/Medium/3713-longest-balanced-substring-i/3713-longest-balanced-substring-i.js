@@ -1,27 +1,24 @@
-/**
- * @param {string} s
- * @return {number}
- */
-var longestBalanced = function(s) {
-    let ans = 0;
+class Solution1:
+    def longestBalanced(self, s: str) -> int:
+        pref = [] 
+        a, b, c, n = 0, 0, 0, len(s)
+        ans = 0
 
-    for (let i = 0; i < s.length; i++) {
-        let hashmap = {};
+        for i in range(n):
+            a += 1 if s[i] == "a" else 0
+            b += 1 if s[i] == "b" else 0
+            c += 1 if s[i] == "c" else 0
 
-        for (let j = i; j < s.length; j++){
-            hashmap[s[j]] = hashmap[s[j]] ? hashmap[s[j]] + 1 : 1;
-            ans = check(hashmap,hashmap[s[j]]) ? Math.max(ans, j-i+1) : ans
-        }
-    }
+            pref.append([a,b,c])
 
-    function check(obj, curr) {
-        for (let k of Object.values(obj)) {
-            if (k != curr){
-                return false;
-            };
-        };
-        return true;
-    };
+        for i in range(n-1, -1, -1):
+            a, b, c = pref[i]
+            curr = i - (min(a,b,c) * 3) + 1
+            print(curr, i)
+            e, f, g = pref[curr]
 
-    return ans;
-};
+            if (a-e) == (b-f) == (c-g):
+                ans = max(ans, (a-e) + (b-f) + (c-g))
+
+        return ans
+
