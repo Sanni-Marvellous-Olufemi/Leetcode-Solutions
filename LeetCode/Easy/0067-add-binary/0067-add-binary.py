@@ -1,14 +1,19 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        curr, ans = 0, ""
+        count = 0
+        n, m = len(a) - 1, len(b) - 1
+        ans = ""
 
-        for i in range(-1, -1-max(len(a), len(b)), -1):
-            curr += int(a[i]) if i >= -len(a) else 0
-            curr += int(b[i]) if i >= -len(b) else 0
-            ans = str(curr % 2) + ans
-            curr //= 2
+        while n >= 0 or m >= 0:
+            if n >= 0:
+                count += int(a[n])
+                n -= 1
 
-        ans = str(curr % 2) + ans if curr else ""
-        return ans
+            if m >= 0:
+                count += int(b[m])
+                m -= 1
 
-        
+            ans = str(count % 2) + ans
+            count //= 2
+
+        return ans if count == 0 else "1" + ans
