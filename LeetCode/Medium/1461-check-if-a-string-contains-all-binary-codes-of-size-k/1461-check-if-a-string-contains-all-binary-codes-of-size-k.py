@@ -1,11 +1,5 @@
 class Solution:
     def hasAllCodes(self, s: str, k: int) -> bool:
-        sets = set()
-        start = 0
-
-        for i in range(k-1, len(s)):
-            sets.add(s[start:i+1])
-            start += 1
-
+        sets = set(s[i-k+1:i+1] for i in range(k-1, len(s)))
         return len(sets) == 2 ** k
             
