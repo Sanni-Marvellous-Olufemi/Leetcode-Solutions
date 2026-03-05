@@ -1,24 +1,9 @@
 class Solution:
     def minOperations(self, s: str) -> int:
         count = 0
-        ans = s[0]
-        for i in range(1, len(s)):
-            if s[i] == ans[-1]:
-                count += 1
-                ans += "1" if s[i] == "0" else "0"
-            else:
-                ans += s[i]
 
+        for i in range(len(s)):
+            count += 1 if (i % 2 == 0 and s[i] == "0") or (i % 2 == 1 and s[i] == "1") else 0
 
-        ans = "1" if s[0] == "0" else "0"
-        count2 = 1
-        for i in range(1, len(s)):
-            if s[i] == ans[-1]:
-                count2 += 1
-                ans += "1" if s[i] == "0" else "0"
-            else:
-                ans += s[i]
-
-
-        return min(count, count2)
+        return min(count, len(s) - count)
         
