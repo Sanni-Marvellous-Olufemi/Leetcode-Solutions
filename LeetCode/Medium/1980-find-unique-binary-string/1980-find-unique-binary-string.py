@@ -1,10 +1,3 @@
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
-        sets = set(nums)
-        n = len(nums)
-
-        for i in range(2**n):
-            num = bin(i)[2:].zfill(n)
-            
-            if num not in sets:
-                return num
+        return "".join(["0" if nums[i][i] == "1" else "1" for i in range(len(nums))])
