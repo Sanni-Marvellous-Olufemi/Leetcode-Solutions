@@ -9,6 +9,9 @@ class Solution:
            hashmap[s[i]] += 1
 
         ans = min(one+zero, len(s)-(one+zero))
+        if len(s) % 2 == 0:
+            return ans
+
         for i in range(len(s)):
             if s[i] == "0":
                 one = hashmap["1"] - one
