@@ -10,7 +10,9 @@ class Solution:
             for i in ["a", "b", "c"]:
                 if s and i == s[-1]:
                     continue
-                walk(s+i)
+                walk(s + i)
+
+                if len(ans) > k: break
 
         walk("")
-        return ans[k-1] if k <= len(ans) else ""
+        return ans[k - 1] if k <= len(ans) else ""
