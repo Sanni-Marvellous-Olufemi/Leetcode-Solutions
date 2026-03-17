@@ -9,10 +9,9 @@ class Solution:
 
         for r in range(len(matrix)):
             matrix[r].sort(reverse=True)
-            c = 0
-            
-            while c < len(matrix[0]) and matrix[r][c] > 0:
-                ans = max(ans, matrix[r][c] * (c+1))
-                c += 1
 
+            for c, height in enumerate(matrix[r]):
+                if height == 0: break 
+                ans = max(ans, height * (c + 1))
+                
         return ans
