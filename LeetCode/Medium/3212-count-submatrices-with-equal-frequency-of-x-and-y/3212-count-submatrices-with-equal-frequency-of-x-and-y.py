@@ -1,8 +1,7 @@
 class Solution:
     def numberOfSubmatrices(self, grid: List[List[str]]) -> int:
-        m, n, sets = len(grid), len(grid[0]), set()
+        m, n = len(grid), len(grid[0])
         count = 0
-        
 
         for r in range(m):
             x = y = 0
@@ -18,19 +17,7 @@ class Solution:
                     grid[r][c][0] += grid[r-1][c][0]
                     grid[r][c][1] += grid[r-1][c][1]
 
-        
-        def walk(r, c):
-            nonlocal m, n, count
+                if c > -1 and (grid[r][c][0] == grid[r][c][1]) and grid[r][c][0] > 0:
+                    count += 1
 
-            if (r >= m) or (c >= n) or (r,c) in sets:
-                return
-
-            if (grid[r][c][0] == grid[r][c][1]) and grid[r][c][0] > 0:
-                count += 1
-
-            sets.add((r,c))
-            walk(r+1, c) 
-            walk(r, c+1)
-  
-        walk(0, 0)
         return count
