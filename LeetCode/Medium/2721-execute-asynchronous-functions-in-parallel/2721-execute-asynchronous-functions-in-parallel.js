@@ -17,10 +17,10 @@ var promiseAll = function(functions) {
                 }
                 
             }).catch((err) => {
-                if (!count){
-                reject(err);
-                    count = 1;
-                }
+                // if (!count){
+                    reject(err);
+                //     count = 1;
+                // }
             })
         })
         
