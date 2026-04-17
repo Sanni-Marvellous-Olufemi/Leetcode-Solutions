@@ -20,3 +20,8 @@ class Solution:
 
         return count
  
+"""
+-Just a modificatiion of kadane's Algorithm
+-keep a prefix sum array that has the sum of only the previous k-1 indices for each index
+-Iterate through the array again, for each index(i) in the prefix sum array, if it's value is greater than 0 add it to i+k index 
+"""
