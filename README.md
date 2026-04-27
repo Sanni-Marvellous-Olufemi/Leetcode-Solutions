@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0322-coin-change](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0322-coin-change/) | Medium |
 | [0717-1-bit-and-2-bit-characters](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/0717-1-bit-and-2-bit-characters/) | Easy |
 | [0874-walking-robot-simulation](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
@@ -68,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
@@ -156,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Hard/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
@@ -206,6 +209,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0322-coin-change](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0322-coin-change/) | Medium |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1559-detect-cycles-in-2d-grid/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -214,6 +218,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
 ## Counting
