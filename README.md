@@ -126,6 +126,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0148-sort-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0148-sort-list/) | Medium |
 | [2807-insert-greatest-common-divisors-in-linked-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2807-insert-greatest-common-divisors-in-linked-list/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -204,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0148-sort-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0148-sort-list/) | Medium |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
@@ -214,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0148-sort-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0148-sort-list/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [3643-flip-square-submatrix-vertically](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/3643-flip-square-submatrix-vertically/) | Easy |
 ## String Matching
@@ -234,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0148-sort-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0148-sort-list/) | Medium |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3653-xor-after-range-multiplication-queries-i/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -245,4 +249,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2833-furthest-point-from-origin](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2833-furthest-point-from-origin/) | Easy |
+## Merge Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0148-sort-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0148-sort-list/) | Medium |
 <!---LeetCode Topics End-->
