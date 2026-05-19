@@ -57,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
+| [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [2615-sum-of-distances](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [2751-robot-collisions](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Hard/2751-robot-collisions/) | Hard |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
@@ -113,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-walking-robot-simulation](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
 | [1345-jump-game-iv](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Hard/1345-jump-game-iv/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1980-find-unique-binary-string/) | Medium |
+| [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [2615-sum-of-distances](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3381-maximum-subarray-sum-with-length-divisible-by-k/) | Medium |
@@ -166,6 +168,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1855-maximum-distance-between-a-pair-of-values/) | Medium |
+| [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3296-minimum-number-of-seconds-to-make-mountain-height-zero/) | Medium |
 | [3488-closest-equal-element-queries](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3488-closest-equal-element-queries/) | Medium |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Hard/3600-maximize-spanning-tree-stability-with-upgrades/) | Hard |
@@ -221,6 +224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0148-sort-list](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0148-sort-list/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1855-maximum-distance-between-a-pair-of-values/) | Medium |
+| [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [3643-flip-square-submatrix-vertically](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/3643-flip-square-submatrix-vertically/) | Easy |
 ## String Matching
 | Problem Name | Difficulty |
