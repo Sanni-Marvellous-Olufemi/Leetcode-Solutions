@@ -1,0 +1,10 @@
+class Solution:
+    def numberOfSpecialChars(self, word: str) -> int:
+        word = set(word)
+        count = 0
+
+        for i in word:
+            if i.lower() != i and i.lower() in word:
+                count += 1
+
+        return count
