@@ -68,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2126-destroying-asteroids](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2126-destroying-asteroids/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
+| [2574-left-and-right-sum-differences](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2574-left-and-right-sum-differences/) | Easy |
 | [2615-sum-of-distances](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
 | [2751-robot-collisions](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Hard/2751-robot-collisions/) | Hard |
@@ -174,6 +175,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1871-jump-game-vii](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1871-jump-game-vii/) | Medium |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1878-get-biggest-three-rhombus-sums-in-a-grid/) | Medium |
+| [2574-left-and-right-sum-differences](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2574-left-and-right-sum-differences/) | Easy |
 | [2615-sum-of-distances](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3129-find-all-possible-stable-binary-arrays-i/) | Medium |
