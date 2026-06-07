@@ -66,6 +66,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2033-minimum-operations-to-make-a-uni-value-grid/) | Medium |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2078-two-furthest-houses-with-different-colors/) | Easy |
 | [2126-destroying-asteroids](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2126-destroying-asteroids/) | Medium |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [2574-left-and-right-sum-differences](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2574-left-and-right-sum-differences/) | Easy |
@@ -130,6 +131,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-walking-robot-simulation](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/0874-walking-robot-simulation/) | Medium |
 | [1345-jump-game-iv](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Hard/1345-jump-game-iv/) | Hard |
 | [1980-find-unique-binary-string](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/1980-find-unique-binary-string/) | Medium |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2540-minimum-common-value](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/2540-minimum-common-value/) | Easy |
 | [2615-sum-of-distances](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2615-sum-of-distances/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
@@ -295,4 +297,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0014-longest-common-prefix](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Easy/0014-longest-common-prefix/) | Easy |
 | [3043-find-the-length-of-the-longest-common-prefix](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/3043-find-the-length-of-the-longest-common-prefix/) | Medium |
+## Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2196-create-binary-tree-from-descriptions/) | Medium |
+## Binary Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2196-create-binary-tree-from-descriptions](https://github.com/Sanni-Marvellous-Olufemi/Leetcode-Solutions/tree/main/LeetCode/Medium/2196-create-binary-tree-from-descriptions/) | Medium |
 <!---LeetCode Topics End-->
