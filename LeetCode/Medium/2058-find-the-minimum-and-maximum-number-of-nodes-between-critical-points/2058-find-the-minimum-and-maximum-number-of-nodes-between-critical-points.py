@@ -11,8 +11,10 @@ class Solution:
         ans = [float("inf"), -float("inf")]
 
         while node.next:
-            if (curr.val < node.val > node.next.val) or (curr.val > node.val < node.next.val):
-                ans[0], ans[1] = min(ans[0], count - prev), max(ans[1], count-first)
+            if (curr.val < node.val > node.next.val) or (
+                curr.val > node.val < node.next.val
+            ):
+                ans[0], ans[1] = min(ans[0], count - prev), max(ans[1], count - first)
 
                 first = count if first == float("inf") else first
                 prev = count
@@ -21,4 +23,4 @@ class Solution:
             curr = node
             node = node.next
 
-        return ans if ans != [float("inf"), -float("inf")] else [-1,-1]
+        return ans if ans != [float("inf"), -float("inf")] else [-1, -1]
