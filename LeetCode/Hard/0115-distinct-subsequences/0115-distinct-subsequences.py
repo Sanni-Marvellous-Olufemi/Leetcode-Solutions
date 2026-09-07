@@ -6,7 +6,7 @@ class Solution:
         def walk(i, j):
             nonlocal prev
 
-            if i >= len(s) or j >= len(t):
+            if i >= len(s) or j >= len(t) or len(s)-i < len(t)-j:
                 return 0
 
             if (i, j) in memo:
