@@ -13,24 +13,18 @@ class Solution:
         hashmap[k] = 0
         heap = []
         heappush(heap, (0, k))
-        sets = set()
 
         while heap:
             w, node = heappop(heap)
-            if node in sets:
+
+            if w > hashmap[node]:
                 continue
-            sets.add(node)
 
             for child, weight in graph[node]:
-                if child in sets:
-                    continue
 
                 if weight + w < hashmap[child]:
                     hashmap[child] = weight + w
-                
-                heappush(heap, (hashmap[child], child))
+                    heappush(heap, (hashmap[child], child))
             
-            # sets.remove(node)
-
         ans = max(hashmap.values())
         return ans if ans != float("inf") else -1
